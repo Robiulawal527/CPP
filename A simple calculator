@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char opa;
+    int num1, num2;
+
+    cout << "Enter your first number : \n";
+    cin >> num1;
+
+    cout << "Enter your opa such as + or - or *or /  " <<endl;
+    cin >> opa;
+
+    cout << "Enter your second number : \n";
+    cin >> num2;
+
+    switch (opa)
+    {
+    case '+':
+        cout << "num1 + num2 = " <<num1 + num2 << endl;
+        break;
+
+    case '-':
+        cout << "num1 - num2 = " << num1 - num2 << endl;
+        break;
+    case '*':
+        cout << "num1 * num2 = " <<num1 * num2 << endl;
+        break;
+
+    case '/':
+        cout << "num1 / num2 = " << num1 / num2 << endl;
+        break;
+    default:
+        cout << "operator is not correct." <<endl;
+        break;
+    }
+
+
+    return 0;
+}
